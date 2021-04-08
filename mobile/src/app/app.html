@@ -1,0 +1,46 @@
+
+<ion-menu [content]="content">
+  <ion-header>
+  </ion-header>
+
+  <ion-content class="">
+    <ion-item no-lines class="menu-header" class="smenu-custom rmcha-menu">
+      <ion-img class="logo_menu"></ion-img>
+
+   <h1 padding-top class="app_name">e-MITRA</h1>
+
+
+    </ion-item>
+    <ion-list no-lines padding-left>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+      <button menuClose ion-item (click)="sync()" >
+        Sync
+      </button>
+
+    </ion-list>
+    <div class="bottom-img-div">
+      <div  style="vertical-align: middle;background-color: transparent;">
+        <img src="assets/imgs/usaid.png" height="40px" >
+       <!-- <ion-img width="50px" height="98px" style="background-color: transparent;" src="assets/imgs/undp_logo.png"></ion-img> -->
+
+     </div>
+      <div  style="vertical-align: middle;background-color: transparent;">
+        <img src="assets/imgs/ipe.png"   height="47px" >
+       <!-- <ion-img width="50px" height="98px" style="background-color: transparent;" src="assets/imgs/undp_logo.png"></ion-img> -->
+
+     </div>
+
+   <div  style="vertical-align: middle;background-color: transparent;">
+    <img src="assets/imgs/vriddhi.png"  width="85px" height="47px" >
+   <!-- <ion-img width="50px" height="98px" style="background-color: transparent;" src="assets/imgs/undp_logo.png"></ion-img> -->
+
+ </div>
+    </div>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

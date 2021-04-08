@@ -1,0 +1,9 @@
+{
+  "name": "e-MITRA",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [],
+  "app_id": ""
+}

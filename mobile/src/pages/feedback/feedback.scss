@@ -1,0 +1,17 @@
+page-feedback {
+
+    .input-col{
+        background-color:color($colors, light, base); 
+        border: 1px solid color($colors, dark, base); 
+    }
+
+    .input-col-text-area
+    {
+        background-color:color($colors, light, base); 
+        border: 1px solid color($colors, dark, base); 
+        min-height: 120px;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+}
